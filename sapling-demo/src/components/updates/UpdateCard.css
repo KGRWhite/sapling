@@ -1,0 +1,142 @@
+.update-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.update-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.update-content {
+  display: flex;
+  gap: 20px;
+}
+
+.update-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.update-icon.checkin {
+  background: #e8f5e9;
+}
+
+.update-icon.meal {
+  background: #fff3e0;
+}
+
+.update-icon.activity {
+  background: #e3f2fd;
+}
+
+.update-icon.nap {
+  background: #f3e5f5;
+}
+
+.update-details {
+  flex: 1;
+}
+
+.update-details h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.update-time {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.update-note,
+.update-description {
+  color: #444;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+.staff-name {
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.meal-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.meal-item {
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.consumption {
+  margin-top: 12px;
+  color: #666;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.activity-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.activity-photo:hover {
+  transform: scale(1.02);
+}
+
+.learning-outcomes {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.learning-outcomes strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.outcome-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.outcome-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
