@@ -2,7 +2,7 @@
 
 A demonstration of parent-facing daily updates functionality for early childhood education centers, built with React and Vite.
 
-![Sapling Demo](screenshot.png)
+**[🚀 Live Demo](https://sapling.kgrwhite.space)**
 
 ## About This Project
 
