@@ -1,6 +1,9 @@
+import { memo } from 'react';
 import './UpdateCard.css';
 
-export default function UpdateCard({ update }) {
+const UpdateCard = memo(function UpdateCard({ update }) {
+  console.log('UpdateCard rendered for:', update.id);
+
   const renderUpdateContent = () => {
     switch (update.type) {
       case 'checkin':
@@ -94,4 +97,6 @@ export default function UpdateCard({ update }) {
       {renderUpdateContent()}
     </div>
   );
-}
+});
+
+export default UpdateCard;
